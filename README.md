@@ -1,2 +1,3 @@
 # mi-pimer-proyecto-github
-mi primer laboratorio con git hub
+Dominando la Interactividad con CSS (Sin JavaScript)
+
