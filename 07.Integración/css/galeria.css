@@ -1,0 +1,127 @@
+/* RESETEO GENERAL (Corregido para evitar desbordamientos) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* CONTENEDOR PRINCIPAL (Fondo Celeste de la imagen) */
+section#galeria {
+    position: relative;
+    margin: 0.5px auto;
+    width: 1000px;
+    background:url(../img/arz.png);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* ================= ROW DE MINIATURAS ================= */
+.miniaturas-container {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.miniaturas-container .thumb {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #ff0000; /* Borde rojo idéntico al de la imagen */
+    overflow: hidden;
+}
+
+.miniaturas-container .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ================= CONTENEDOR GRANDE (Blanco) ================= */
+#cajaGaleria {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Ajusta la altura según tus imágenes grandes */
+    background: url(../img/arz.png);
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* CONFIGURACIÓN DE LAS SLIDES */
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    opacity: 0;
+    z-index: 1;
+    padding: 25px;
+    background: url(../img/arz.png);
+    border-radius: 10px;
+    border: 1px solid #ff0000; /* Borde rojo idéntico al de la imagen */
+    box-shadow: 5px 5px 100px rgba(32, 28, 28, 0.15);
+    /* Aplicamos la animación de desvanecimiento continuo */
+    animation: autoPlayGaleria 12s infinite ease-in-out;
+}
+
+/* CONTROL DE TIEMPOS (Staggered Delays) 
+   Total del ciclo: 12 segundos (4 segundos para cada una de las 3 imágenes) */
+.slide:nth-child(1) {
+    animation-delay: 0s;
+}
+.slide:nth-child(2) {
+    animation-delay: 4s;
+}
+.slide:nth-child(3) {
+    animation-delay: 8s;
+}
+
+/* ELEMENTOS INTERNOS DEL CONTENIDO */
+.galeria-content h1 {
+    font-size: 1.8rem;
+    color: #333333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.img-grande {
+    width: 100%;
+    height: auto;
+    max-height: 320px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.galeria-content p {
+    color: #666666;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* ================= ANIMACIÓN CSS DE CAMBIO AUTOMÁTICO ================= */
+@keyframes autoPlayGaleria {
+    0% {
+        opacity: 0;
+        z-index: 1;
+    }
+    4% {
+        opacity: 1;
+        z-index: 2; /* Aparece suavemente */
+    }
+    33.33% {
+        opacity: 1;
+        z-index: 2; /* Se mantiene visible durante su tercio de tiempo */
+    }
+    37.33% {
+        opacity: 0;
+        z-index: 1; /* Se desvanece para dar paso a la siguiente */
+    }
+    100% {
+        opacity: 0;
+        z-index: 1;
+    }
+}

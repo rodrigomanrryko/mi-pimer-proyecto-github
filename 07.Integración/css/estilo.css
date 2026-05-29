@@ -1,0 +1,920 @@
+*{
+	margin:0;
+	padding:0;
+	text-decoration:none;
+	list-style:none;
+	font-family:sans-serif;
+	
+	}
+	
+body{
+	background:url(../img/background.jpg);
+	background-repeat:repeat;
+	}
+	
+/*-------------------------------*/	
+/*-------------------------------*/	
+/*--CABEZOTE--*/
+	
+header{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:83px;
+	border-bottom:1px solid #3ed546;
+	background:url(../img/arz.png);
+	}
+	
+#logo{
+	position:absolute;
+	top:17px;
+	left:15px;
+	width:188px;
+	height:47px;
+	}
+	
+/*--FIN CABEZOTE--*/
+/*-------------------------------*/	
+/*-------------------------------*/
+
+/*-------------------------------*/	
+/*-------------------------------*/
+/*--SLIDE--*/
+
+#slide{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:301px;
+	}
+	
+/*--FIN SLIDE--*/
+/*-------------------------------*/	
+/*--BARRA DE NAVEGACIÓN--*/
+
+nav{
+	position:relative;
+	width:1000px;
+	height:55px;
+	margin:auto;
+	border-bottom:1px solid #3ed546;
+	background:url(../img/arz.png);
+}
+
+nav ul{
+	position:absolute;
+	top:0;
+	left:0;
+	width:500px;
+	height:45px;
+	width:124px;
+	line-height:45px;
+	text-align:center;
+	font-size:14px;
+	color:white;
+	border-right:1px solid #bcd1cb;
+	display:flex; /* acomoda horizontalmente */
+}
+
+nav ul li{
+	flex:1; /* todos ocupan el mismo espacio */
+	text-align:center;
+	
+	border-right:1px solid white;
+		float:left;
+	width:124px;
+	line-height:45px;
+	text-align:center;
+	font-size:14px;
+	color:white;
+	border-right:1px solid #bcd1cb;
+
+
+}
+
+nav ul li a{
+	display:block;
+	padding:18px 0; /* MÁS ESPACIO ARRIBA Y ABAJO */
+	color:white;
+	text-decoration:none;
+	font-family:Arial;
+	font-size:16px;
+}
+
+/*--FIN BARRA DE NAVEGACIÓN--*/
+
+
+
+/*-------------------------------*/
+/*--BOTONERA SLIDE--*/
+
+#botoneraSlide{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:26px;
+	background:url(../img/arz.png);
+	}
+	
+#botoneraSlide ul{
+	position:relative;
+	margin:auto;
+	width:100px;
+	height:26px;
+	}
+	
+#botoneraSlide ul li{
+	float:left;
+	width:10px;
+	height:10px;
+	border-radius:100%;
+	background:#232d80;	
+	border:3px solid white;
+	margin:3px 2px;
+	}
+	
+/*--FIN BOTONERA SLIDE--*/
+/*-------------------------------*/	
+/*-------------------------------*/
+/*--SECTION INICIO--*/
+
+/* ================= SECCIÓN INICIO (ESTILO ELEGANTE) ================= */
+section#inicio {
+    position: relative;
+    margin: 10px auto; /* Centrado en la pantalla con espacio arriba y abajo */
+    width: 1000px;
+    /* Cambiamos height por min-height para que si el texto crece, la caja se adapte y no se rompa */
+    min-height: 299px; 
+    background:url(../img/arz.png);
+    border-radius: 10px; /* Esquinas suavemente redondeadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Una sombra muy fina y elegante */
+}
+
+/* Agregamos el formateo al UL para que tus columnas se alineen perfectamente */
+section#inicio ul {
+    display: flex; /* Flexbox mantiene las 3 columnas en línea de forma más limpia que el float */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+    
+section#inicio ul li {
+    width: 333.33px; /* Mantiene el ancho exacto que definiste */
+    padding: 30px 25px; /* En lugar de dar márgenes a cada elemento, el LI abraza todo con estilo */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Empuja la imagen hacia abajo de forma simétrica */
+    box-sizing: border-box; /* Evita que el padding altere el ancho de 333px */
+}
+    
+section#inicio ul li h1 {
+    margin: 0 0 12px 0; /* Eliminamos los márgenes raros, solo espacio hacia abajo */
+    font-weight: 700; /* Un grosor más corporativo y moderno */
+    font-size: 22px;
+    color: #0f172a; /* Azul oscuro/pizarra muy elegante en vez de negro puro */
+}
+    
+section#inicio ul li p {
+    margin: 0 0 20px 0; /* Espacio controlado antes de la imagen */
+    font-size: 14px;
+    color: #475569; /* Gris oscuro que mejora un 100% la legibilidad */
+    line-height: 1.6; /* Mayor espacio entre líneas para que el texto "respire" */
+}
+    
+section#inicio ul li img {
+    margin: 0; /* El margen ya lo controla el contenedor */
+    width: 100%; /* Se adapta elegantemente al ancho de la columna */
+    height: 90px; /* Un alto similar al tuyo */
+    object-fit: cover; /* ¡LA PROPIEDAD MÁGICA! La imagen ya no se aplastará, se adaptará perfectamente */
+    background: #e2e8f0;  /* Un plata/gris más moderno que el silver común */
+    border-radius: 4px; /* Un toque sutil en las esquinas de la foto */
+}
+/* ================= SECCIÓN INICIO (ESTILO ELEGANTE) ================= */
+
+
+
+
+/*--FIN SECTION INICIO--*/
+/*-------------------------------*/	
+/*-------------------------------*/	
+/*--SECTION QUIENES SOMOS--*/
+
+section#quienesSomos{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:299px;
+	background:url(../img/arz.png);
+	
+	}
+
+section#quienesSomos h1{
+	position:relative;
+	top: 20px;
+	left:30px;
+	color:#4438ec;
+	font-weight:200;
+	}
+	
+section#quienesSomos hr{
+	position:relative;
+	top:20px;
+	width:950px;
+	margin:auto;
+	border:1px solid #2a00fbc6;
+	}
+
+section#quienesSomos p{
+	position:relative;
+	top:40px;
+	width:950px;
+	margin:auto;
+	color:#fbf9fd;
+	text-align:justify;
+	}
+	
+section#quienesSomos img{
+	float:left;
+	width:272px;
+	margin-right:20px;
+	margin-bottom:20px;
+	}
+	
+/*--FIN SECTION QUIENES SOMOS--*/
+/*-------------------------------*/	
+/*-------------------------------*/	
+/*--SECTION SERVICIOS--*/
+
+section#servicios{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:300px;
+	background:rgb(145, 118, 118);
+	}
+	
+section#servicios #cajaServicios{
+	position:relative;
+	width:935px;
+	margin:auto;
+	top:18px;
+	height:262px;
+	background:rgb(227, 111, 111);
+	box-shadow:0px 0px 30px #222;
+	}
+	
+section#servicios #cajaServicios ul#lista{
+	position:absolute;
+	top:20px;
+	left:15px;
+	width:151px;
+	height:220px;
+	}
+
+section#servicios #cajaServicios ul#lista li{
+	width:151px;
+	height:72px;
+	margin:2px 0;
+	cursor:pointer;
+	}
+	
+section#servicios #cajaServicios ul#visor{
+	position:absolute;
+	top:20px;
+	right:20px;
+	width:732px;
+	height:220px;
+	}
+	
+section#servicios #cajaServicios ul#visor li{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:732px;
+	height:220px;	
+	}
+	
+section#servicios #cajaServicios ul#visor li h1{
+	position:absolute;
+	z-index:1;
+	top:20px;
+	left:20px;
+	color:#4d545a;
+	font-weight:100;
+}
+
+section#servicios #cajaServicios ul#visor li p{
+	position:absolute;
+	z-index:1;
+	bottom:0;
+	background:rgba(0,0,0,.7);
+	color:white;
+	width:97%;
+	line-height:60px;
+	padding-left:20px;
+}
+	
+	
+/*--FIN SECTION SERVICIOS--*/
+/*-------------------------------*/	
+/*-------------------------------*/
+/*--SECTION CONTACTENOS--*/
+
+section#contactenos{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:280px;
+	background:url(../img/arz.png);
+	}
+	
+section#contactenos form{	
+	position:relative;
+	margin:auto;
+	top:20px;
+	width:950px;
+	height:235px;
+	background:none;
+	border-radius: 10px;
+	}
+
+section#contactenos form input#nombre{
+	position:absolute;
+	padding:10px;
+	width:340px;
+	height:80px;
+	font-family: Arial, sans-serif;
+	background:#92d1f3;
+	border:0;
+	box-sizing: border-box;
+	border-radius: 10px;
+	}
+	
+section#contactenos form input#email{
+	position:absolute;
+	top:81px;
+	padding:10px;
+	width:340px;
+	height:65px;
+	font-family: Arial, sans-serif;
+	background:#92d1f3;
+	border:0;
+	box-sizing: border-box;	
+	border-radius: 10px;
+	}
+	
+section#contactenos form input#asunto{
+	position:absolute;
+	bottom:0px;
+	padding:10px;
+	width:340px;
+	height:87px;
+	font-family: Arial, sans-serif;
+	background:#92d1f3;
+	border:0;
+	box-sizing: border-box;
+	border-radius: 10px;
+	}
+	
+section#contactenos form #mensaje{
+	position:absolute;
+	right:0px;
+	padding:10px;
+	width:605px;
+	height:158px;
+	background:#92d1f3;
+	border:0;
+	box-sizing: border-box;
+	border-radius: 10px;
+	}
+	
+section#contactenos form input#enviar{
+	position:absolute;
+	bottom:0px;
+	right:0;
+	padding:10px;
+	width:604px;
+	height:69px;
+	background: #cc1836; 
+    border: 0;
+    color: white;
+    /* EXTRAS para que quede idéntico a la foto 2: */
+    text-transform: uppercase; /* Fuerza el texto a MAYÚSCULAS */
+    font-weight: bold;         /* Pone la letra en negrita */
+    font-size: 16px;
+    cursor: pointer;           /* Hace que aparezca la manito al pasar el mouse */
+	border-radius: 0 0 10px 10px; /* Solo redondea la parte inferior del botón */
+}
+	
+/*--FIN SECTION CONTACTENOS--*/
+/*-------------------------------*/	
+
+/* ================= ESTILOS: NOTICIAS ================= */
+.news-section {
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:550px;
+    background:url(../img/arz.png);
+	margin: auto;
+	padding: -20px 20px;
+}
+
+.news-container {
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:700px;
+	margin: auto;
+	padding: 20px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+	flex-direction: flow;
+	box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05); /* Sombra interior para un toque de profundidad */
+}
+
+.news-title-block {
+	top: 0px;
+    text-align: center;
+    margin-bottom: 50px;
+	height:60px;
+}
+
+.news-title-block h2 {
+	top: 0px;
+    font-size: 2.2rem;
+    color: #0f172a;
+    margin-bottom: 1px;
+    font-weight: 700;
+}
+
+.news-title-block p {
+    color: #acb7c6;
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.news-grid {
+	position:relative;
+	margin:auto;
+	width:900px;
+	height:100px;
+	margin: auto;
+	padding: 0px 0px;
+	flex-direction: flow;    
+	display: flex;
+	box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.05); /* Sombra interior para un toque de profundidad */	
+}
+
+.news-card {
+	position:relative;
+	margin:auto;
+	width:1000px;
+height:410px;
+	background: #e23f3f;
+	padding: 0px 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    flex-direction: column;
+	display: flex;
+}
+
+.news-image-box {
+
+    width: 100%;
+    height: 150px;
+	    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    flex-direction:  column;
+    background-color: #5187c8;
+}
+
+.news-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #c69c36; /* Color Dorado */
+    color: #0f172a;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.news-body {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.news-date {
+    font-size: 0.85rem;
+    color: #e5f0ff;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.news-body h3 {
+    font-size: 1.4rem;
+    color: #0f172a;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.news-body p {
+    color: #475569;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.news-read-more {
+    color: #c69c36;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: auto;
+    transition: color 0.3s ease;
+}
+
+.news-read-more:hover {
+    color: #0f172a;
+}
+
+/* ================= ESTILOS: BLOG ================= */
+.blog-section {
+	position:relative;
+	margin:auto;
+	width:1000px;
+background:url(../img/arz.png);
+    padding: 20px 20px;
+}
+
+.blog-container {
+	top: -80px;
+	margin:auto;	
+	background:url(../img/arz.png);
+    max-width: 1100px;
+	margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+	padding: 0px 0px;
+}
+
+.blog-title-block h2 {
+	top: 0px;
+    font-size: 2.2rem;
+    color: #000000;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.blog-title-block p {
+    color: #475569;
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.blog-post-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.blog-post-card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-post-content {
+    padding: 30px 25px;
+}
+
+.blog-meta {
+    margin-bottom: 15px;
+    font-size: 0.85rem;
+}
+
+.blog-category {
+    color: #c69c36;
+    font-weight: 700;
+}
+
+.blog-read-time {
+    color: #94a3b8;
+    margin-left: 5px;
+}
+
+.blog-post-card h3 {
+    font-size: 1.25rem;
+    color: #0f172a;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.blog-post-card p {
+    color: #475569;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Footer de autor en la tarjeta */
+.blog-author-footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 25px;
+    border-top: 1px solid #f1f5f9;
+    background-color: #fafafa;
+}
+
+.author-avatar {
+    width: 36px;
+    height: 36px;
+    background-color: #0f172a;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.author-info h4 {
+    font-size: 0.85rem;
+    color: #0f172a;
+    margin: 0;
+}
+
+.author-info span {
+    font-size: 0.75rem;
+    color: #94a3b8;
+}
+
+/* ================= ESTILOS: AYUDA Y SOPORTE ================= */
+.support-section {
+    background-color: #0f172a; /* Azul oscuro corporativo de fondo */
+    color: #ffffff;
+    padding: 90px 20px;
+}
+
+.support-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.support-hero-block {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.support-hero-block h2 {
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.support-hero-block p {
+    color: #94a3b8;
+    font-size: 1.05rem;
+    max-width: 650px;
+    margin: 0 auto 30px auto;
+}
+
+/* Buscador Estilizado */
+.support-search-box {
+    max-width: 550px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.support-search-box input {
+    width: 100%;
+    padding: 16px 25px;
+    font-size: 0.95rem;
+    border: 1px solid #334155;
+    border-radius: 30px;
+    background-color: #1e293b;
+    color: #ffffff;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.support-search-box input:focus {
+    border-color: #c69c36;
+    box-shadow: 0 0 10px rgba(198, 156, 54, 0.2);
+}
+
+/* Grid de opciones de ayuda */
+.support-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.support-box {
+    background: #1e293b; /* Tarjetas en contraste con el fondo oscuro */
+    border: 1px solid #334155;
+    border-radius: 10px;
+    padding: 40px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.support-box:hover {
+    transform: translateY(-5px);
+    border-color: #c69c36;
+}
+
+.support-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(198, 156, 54, 0.1);
+    color: #c69c36;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.support-box h3 {
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.support-box p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    flex-grow: 1; /* Empuja el botón siempre a la misma altura al final */
+}
+
+.support-btn-link {
+    display: inline-block;
+    padding: 10px 22px;
+    background-color: transparent;
+    color: #c69c36;
+    border: 1px solid #c69c36;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.support-btn-link:hover {
+    background-color: #c69c36;
+    color: #0f172a;
+}
+
+/*-------------------------------*/
+/*--BOTTOM--*/
+
+#bottom{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:190px;
+	background:url(../img/backBottom.jpg);
+	}
+	
+#bottom ul li{
+	float:left;
+	width:250px;
+	height:190px;
+	}
+	
+#bottom ul li h1{
+	margin:13px 18px;
+	color:white;
+	font-size:18px;
+	font-weight:100;
+	}
+	
+#bottom ul li ol{
+	position:relative;
+	top:15px;
+	left:17px;
+	width:190px;
+	height:80px;
+	background:rgba(0, 0, 0, 0.91);
+	}
+	
+#bottom ul li ol li{
+	height:20px;
+	text-align:left;
+	list-style:inside;
+	font-size:15px;
+	color:white;
+	list-style-image:url(../img/list.png);
+	}
+	
+#bottom ul li img{
+	position:relative;
+	top:15px;
+	left:15px;
+	width:95px;
+	height:95px;
+	border:4px solid white;
+	background:url(../img/imgGaleria.jpg);
+	background-size:cover;
+	}
+	
+#bottom ul li ul{
+	position:relative;
+	top:11px;
+	left:15px;
+	width:200px;
+	height:40px;
+	}
+	
+#bottom ul li ul li{
+	float:left;
+	width:40px;
+	height:40px;
+	border-radius:100%;
+	background:white;
+	margin:5px;
+	}
+	
+#bottom ul li ul li:first-child{
+	background:url(../img/facebook.jpg);
+	background-size:cover;
+	}
+#bottom ul li ul li:nth-child(2){
+	background:url(../img/wsp.png);
+	background-size:cover;
+	}	
+#bottom ul li ul li:nth-child(3){
+	background:url(../img/tiktok2.jpg);
+	background-size:cover;
+	}		
+#bottom ul li ul li:nth-child(4){
+	background:url(../img/iconoTwitter.jpg);
+	background-size:cover;
+	}	
+#bottom ul li ul li:nth-child(5){
+	background:url(../img/iconoGoogle.jpg);
+	background-size:cover;
+	}
+#bottom ul li ul li:last-child{
+	background:url(../img/iconoPinterest.jpg);
+	background-size:cover;
+	}
+	
+#bottom ul li ul li a{
+	float:left;
+	width:40px;
+	height:40px;
+	border-radius:100%;
+	}
+/*--FIN BOTTOM--*/
+/*-------------------------------*/	
+/*-------------------------------*/
+/*--FOOTER--*/
+
+footer{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height:62px;
+	text-align:center;
+	color:white;
+	line-height:62px;
+	font-size:15px;
+	background:black;
+	}
+

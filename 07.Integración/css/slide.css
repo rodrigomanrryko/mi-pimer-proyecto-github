@@ -1,0 +1,80 @@
+/*--SLIDE--*/
+
+#slide{
+	position:relative;
+	margin:auto;
+	width:1000px;
+	height: 301px;
+	overflow:hidden;
+}
+
+#slide ul{
+	position:relative;
+	margin:0;
+	padding:0;
+	list-style:none;
+	width:1000px;
+	height:301px;
+}
+#slide ul li{
+	position:absolute;
+	top:0;
+	left:0;
+	width:1000px;
+	height:301px;
+	opacity:0;
+	animation:slider 10s infinite;
+}
+
+
+/* Tiempo para cada imagen */
+#slide ul li:nth-child(1){
+	animation-delay:0s;
+}
+
+#slide ul li:nth-child(2){
+	animation-delay:2s;
+}
+
+#slide ul li:nth-child(3){
+	animation-delay:4s;
+}
+
+#slide ul li:nth-child(4){
+	animation-delay:6s;
+}
+
+#slide ul li:nth-child(5){
+	animation-delay:8s;
+}
+
+#slide ul li img{
+	width:1000px;
+	height:301px;
+}
+
+/* Animación */
+@keyframes slider{
+
+	0%{
+		opacity:0;
+	}
+
+	10%{
+		opacity:1;
+	}
+
+	30%{
+		opacity:1;
+	}
+
+	40%{
+		opacity:0;
+	}
+
+	100%{
+		opacity:0;
+	}
+}
+
+
